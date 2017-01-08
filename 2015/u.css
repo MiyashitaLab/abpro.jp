@@ -1,0 +1,134 @@
+html, body{
+	font-family: sans-serif;
+	line-height: 200%;
+}
+
+p{
+	line-height: 150%;
+}
+
+h1{
+	width: 780px;
+	background: #007acc;
+	color: #fff;
+	margin: 0 auto;
+	padding-left: 10px;
+}
+
+h2{
+	color: #007acc;
+	margin: 5px 0px;
+}
+
+ul{
+	padding-left: 20px;
+	margin: 0px;
+}
+
+th{
+	background: #007acc;
+	color: #fff;
+	padding: 5px;
+}
+
+td{
+	padding: 5px;
+}
+
+a{
+	color: #B24926;
+}
+
+img.head{
+	display: block;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+a:hover{
+	color: inherit;
+	text-decoration: none;
+}
+
+.cont{
+	width: 750px;
+	background: #f6f6f6;
+	padding: 20px;
+	margin: 0 auto;
+	font-family:"ヒラギノ角ゴ Pro W3","メイリオ",sans-serif;
+}
+
+.cont p{
+	margin: 0px;
+}
+
+.wrap{
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.memo {
+	margin-left: 30px;
+	padding: 3px 0 3px 0;
+	font-size: 14px;
+}
+
+.person {
+	width: 220px;
+	margin: 5px;
+	float: left;
+}
+
+.icons {
+	text-align: right;
+	width: 80px;
+	margin-left: 0px;
+	float: left;
+}
+
+#name {
+	position: relative;
+	left: 10px;
+	width: 180px;
+}
+
+#shozoku {
+	position: relative;
+	left: 10px;
+	width: 230px;
+	font-size: 11px;
+}
+
+.clear {
+	clear: both;
+}
+
+.time {
+	background-color: #eeeeee;
+	width: 680px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding-left: 5px;
+}
+
+.tobiiri {
+	letter-spacing: 5px;
+	-moz-border-radius: 20px;
+	/* Firefox */
+	-webkit-border-radius: 20px;
+	/* Safari,Chrome */
+	border-radius: 20px;
+	/* CSS3 */
+	position: relative;
+	width: 300px;
+	font-size: 24px;
+	color: #ffffff;
+	background-color: #aa2222;
+	text-shadow: 0px 3px 10px #999999;
+	padding: 8px 30px 8px;
+	margin-top: 20px;
+	text-align: center;
+	font-weight: bold;
+	box-shadow: inset 0 0 10px #fff, inset 0 0 5px #fff, inset 0 0 10px #fff, inset 0 0 5px #fff;
+}

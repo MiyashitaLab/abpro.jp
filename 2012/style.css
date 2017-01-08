@@ -1,0 +1,455 @@
+body { 
+	background-color: black;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	-webkit-text-stroke-width:0px;
+	color:#eeeeee;
+	font-family: times, Times New Roman;
+}
+h1 {
+	font-size:72px;
+	margin:10px 0px 30px 0px;
+}
+h2 {
+	padding:10px;
+	font-size:30px;
+	margin-bottom:0px;
+}
+h3 {
+	padding-top:10px;
+	padding-bottom:0px;
+}
+
+a {
+	color:#88ff88;
+}
+a:hover {
+	color:#00ccff;
+	text-shadow: -1px -1px 3px #0ff ,1px 1px 3px #0ff;
+}
+
+td{
+	padding:5px;
+}
+
+#abbg {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-image:url("img/abproimage3.png");
+	z-index:1;
+}
+#world {
+	top:0;
+	position: absolute;
+	z-index:0;
+}
+
+#aisatsu{
+	font-family: "ＭＳ Ｐ明朝","平成明朝";
+	font-size:16px;
+	text-align:left;
+	position:absolute;
+	top:70px;
+}
+#title {
+	position: relative;
+	width:900px;
+	height:100px;
+	margin: 0 auto;
+	color:#eeeeee;
+	//background-color:#00ffff;
+	z-index:2;
+	padding:0;
+}
+
+#main {
+	position: relative;
+	width:1000px;
+	height:700px;
+	margin: 0 auto;
+	color:#eeeeee;
+	z-index:3;
+}
+#clearfloat {
+	clear:both;
+	height:0;
+}
+#stsclass {
+	position:absolute;
+	left:0px;
+	top:0px;
+	color:#00ff99;
+	z-index:30;
+	font-family:Terminal;
+	text-shadow: -1px -1px 3px #0ff ,1px 1px 3px #0ff;
+}
+#testtext {
+	position:absolute;
+	left:0px;
+	top:200px;
+	color:#00ff99;
+	z-index:30;
+	font-family:Terminal;
+	text-shadow: -1px -1px 3px #0ff ,1px 1px 3px #0ff;
+}
+#effect {
+	position:absolute;
+	left:0px;
+	top:400px;
+	color:#00ff99;
+	z-index:30;
+	font-family:Terminal;
+	text-shadow: -1px -1px 3px #0ff ,1px 1px 3px #0ff;
+}
+
+#map_canvas {
+	position: absolute;
+	top:180px;
+	left:500px;
+	width: 260px;
+	height: 140px;
+	frameborder: 0;
+	scrolling: no;
+	marginheight: 0;
+	marginwidth: 0;
+}
+
+/*コンテンツ設定 -     
+---------------------------------------------------------------------------*/
+.contents {
+	color:white;
+	height:700px;
+	width:860px;
+	margin:0 auto;
+	background:rgba(22, 33, 90,0.3);
+	position:absolute;
+	top:50px;
+	-webkit-transform: rotateY(80deg) rotateX(10deg);
+	font-size:15px;
+  -webkit-transform-style:  preserve-3d;
+  -moz-transform-style:     preserve-3d;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	font-family: "メイリオ",'平成角ゴシック';
+}
+
+#Info {
+	position:absolute;
+	left:0px;
+	height:520px;
+	z-index:4;
+}
+#infomain {
+	padding:0px 30px;
+}
+
+#Presenter{
+	position:absolute;
+	left:0px;
+	height:490px;
+	z-index:5;
+}
+#bomain{
+	padding:0px 30px;
+}
+#bomain p{
+	padding:0px 30px;
+	margin:0px;
+}
+
+#bomain img{
+	padding-left:30px;
+	padding-right:10px;
+	margin:0px;
+}
+#bomain #lnk{
+	padding:0px;
+	margin:0px;
+}
+#bomain #but{
+	padding:0px 30px;
+	margin:0px;
+}
+p.btm{
+	width:120px;
+}
+.btm{
+	width:90px;
+	float:left;
+	margin:0px;
+}
+#but {
+}
+#fl {
+	float:left;
+}
+#cl {
+	clear:both;
+}
+#Application {
+	position:absolute;
+	height:470px;
+	left:0px;
+	z-index:6;
+}
+#Application h2{
+	font-size:26px;
+}
+#Program {
+	position:absolute;
+	height:1020px;
+	width:800px;
+	left:0px;
+	z-index:7;
+}
+#promain{
+	padding:0px 30px;
+}
+#promain p{
+	padding-top:10px;
+	padding-left:30px;
+	margin:0px;
+}
+#timetable table{
+	padding:0px;
+	border-spacing:0px;
+}
+#timetable td{
+	padding:0px;
+	line-height:14px;
+	height:40px;
+}
+#timetable img{
+	width:45px;
+	height:45px;
+	padding-left:15px;
+}
+.mes {
+	font-size:18px;
+}
+.toku {
+	background:rgba(192, 60, 20,0.3);
+}
+.gozen {
+	background:rgba(22, 150, 50,0.3);
+}
+.gogoa {
+	background:rgba(182, 220, 50,0.3);
+}
+.gogob {
+	background:rgba(22, 150, 220,0.3);
+}
+
+#shozoku {
+	font-size:11px;
+}
+#tobiiri {
+	font-size:20px;
+}
+#Archive {
+	position:absolute;
+	height:400px;
+	left:0px;
+	z-index:8;
+}
+#armain {
+	padding:0px 30px;
+}
+#armain p{
+	padding-top:0px;
+	padding-left:30px;
+	margin:0px;
+}
+#Committee {
+	position:absolute;
+	height:570px;
+	left:0px;
+	z-index:9;
+}
+#unmain {
+	padding:0px 30px;
+}
+
+#hotpink {
+	color:hotpink;
+	text-shadow:1px 1px 3px hotpink;
+}
+
+#white {
+	color:white;
+	text-shadow:1px 1px 1px white;
+}
+
+#limit {
+	position:absolute;
+	top:515px;
+	left:320px;
+	text-align: left;
+	font-size:12px;
+	line-height:130%;
+}
+#timelimit {
+	position:absolute;
+	top:505px;
+	left:500px;
+	color:hotpink;
+	text-shadow:1px 1px 3px hotpink;
+	font-size:48px;
+}
+
+/*メインメニュー設定
+---------------------------------------------------------------------------*/
+#menu {
+	font-family: "メイリオ",'平成角ゴシック';
+	padding-top:0px;
+	padding-bottom:5px;
+	width:100%;
+	height:2em;  
+	margin: 0 auto;
+	white-space:normal;
+}
+
+#menu ul { 
+	list-style-type : none; 
+}
+#menu li { 
+	display : inline; 
+	float:left;
+	margin-right:0px;
+}
+#menu a {
+	display:block; 
+	border:2px dotted #333;
+	font-size:large;
+	text-decoration:none;
+	color:#eeeeee;width:7em; 
+	height:2.0em;
+	width:6.7em;
+	margin:0px 5px; 
+	text-align:center;
+}
+#menu p{
+	margin:0;
+	padding:5px;
+	vertical-align:middle;
+}
+#menu a:hover {
+	display:block; 
+	border:2px dotted #00eeee;
+	font-size:large;
+	color:#88ff88;
+}
+#tit {
+	font-size:15px;
+}
+#tit2 {
+	font-size:14px;
+}
+.span1 {
+cursor: pointer;
+}
+
+button {  
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.6), inset 0 1px rgba(255,255,255,0.2), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.2), inset 0 -15px 30px rgba(0,0,0,0.6);  
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.6), inset 0 1px rgba(255,255,255,0.2), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.2), inset 0 -15px 30px rgba(0,0,0,0.6);  
+    border: 1px solid rgba(0,0,0,0.4);  
+    background: rgba(0,200,200,0.6);  
+    color: #fff;  
+    text-shadow: 0 -1px 1px #aaa, -1px 0 1px #aaa, 1px 0 1px #000;  
+}  
+button:hover {  
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.3), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.3), inset 0 10px 20px rgba(255,255,255,0.3), inset 0 -15px 30px rgba(0,0,0,0.3);  
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.3), inset 0 1px rgba(255,255,255,0.3), inset 0 10px rgba(255,255,255,0.3), inset 0 10px 20px rgba(255,255,255,0.3), inset 0 -15px 30px rgba(0,0,0,0.3);  
+}  
+button:active {  
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.3), inset 0 1px rgba(0,0,0,0.3), inset 0 1px rgba(0,0,0,0.8), inset 0 10px 20px rgba(0,0,0,0.8), inset 0 -15px 30px rgba(0,0,0,0.3);  
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.3), inset 0 1px rgba(0,0,0,0.3), inset 0 1px rgba(0,0,0,0.8), inset 0 10px 20px rgba(0,0,0,0.8), inset 0 -15px 30px rgba(0,0,0,0.3);  
+    background: rgba(0,0,0,0.7);  
+	padding-left:8px;
+}
+
+#cedec {
+	position:absolute;
+	left:480px;
+	top:10px;
+} 
+#cedecimg {
+	float:left;
+}
+#cedec h3 {
+padding:10px;
+margin:0px;
+width: 500px
+}
+
+#ring {
+	color:white;
+	height:100%;
+	width:100%;
+	margin:0 auto;
+	background:rgba(22, 33, 90,0.3);
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:100;
+	font-size:15px;
+  -webkit-transform-style:  preserve-3d;
+  -moz-transform-style:     preserve-3d;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	font-family: "メイリオ",'平成角ゴシック';
+}
+.presenters {
+	top:200px;
+	left:500px;
+	height:400px;
+	width:600px;
+	margin:0 auto;
+	background:rgba(22, 90, 33,1);
+	position:absolute;
+	-webkit-transform-style:  preserve-3d;
+	-moz-transform-style:     preserve-3d;
+	-moz-transform-origin: 50% 50%;  
+	-webkit-transform-origin: 50% 50%; 
+	-webkit-transition: all 0.1s linear;
+	-moz-transition: all 0.1s ease-in-out;
+}
+
+#atogaki {
+	z-index:200;
+	color:white;
+	height:560px;
+	width:860px;
+	margin:0 auto;
+	background:rgba(12, 13, 50,0.9);
+	position:absolute;
+	top:160px;
+	left:50%;
+	margin-left:-430px;
+	font-size:15px;
+text-align : center ;
+  -webkit-transform-style:  preserve-3d;
+  -moz-transform-style:     preserve-3d;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition: all 0.5s ease-in-out;
+	font-family: "メイリオ",'平成角ゴシック';
+}
+#tojiru {
+	font-size:20px;
+	position:relative;
+	left:100%;
+	background:tomato;
+	margin-left:-30px;
+	height:30px;
+	width:30px;
+	cursor:pointer;
+}
+
+html{
+overflow-x : hidden;
+overflow-y : auto;
+}

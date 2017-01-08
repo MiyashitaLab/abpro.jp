@@ -1,0 +1,199 @@
+body {
+	font-family: "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro";
+	background-color:#F8EFFF;
+	background-attachment: fixed;
+}
+
+h1 {
+	background-color:#ff0000;
+	color:white;
+}
+
+h3 {
+	background-color:#F8EFFF;
+	color:black;
+}
+
+#menu {
+	z-index:1;
+	position: fixed;
+	top:0;
+	right:0;
+	width:350px;
+	height:350px;
+	margin-right : 0 ;
+}
+/* 各種メニューバー */
+#m_top {
+position:absolute;
+top:20;
+right:0;
+font-size:30;
+width:200px;
+-webkit-transform-origin: 100% 100%;  
+background-color:#00aa00;
+-webkit-transition: background-color 0.1s linear, width 0.1s linear;
+cursor: pointer;
+}
+#m_top:hover {
+background-color:#00aa88;
+width:230px;
+}
+
+#m_about {
+position:absolute;
+top:80;
+right:0;
+font-size:30;
+width:200px;
+-webkit-transform-origin: 100% 100%; 
+background-color:#aaff00;
+-webkit-transition: background-color 0.1s linear, width 0.1s linear;
+cursor: pointer;
+}
+#m_about:hover {
+background-color:#aaff99;
+width:230px;
+}
+
+#m_timetable {
+position:absolute;
+top:140;
+right:0;
+font-size:30;
+width:200px;
+-webkit-transform-origin: 100% 100%; 
+background-color:#ffff00;
+-webkit-transition: background-color 0.1s linear, width 0.1s linear;
+cursor: pointer;
+}
+#m_timetable:hover {
+background-color:#ffffaa;
+width:230px;
+}
+
+#m_presenter {
+position:absolute;
+top:200;
+right:0;
+font-size:30;
+width:200px;
+-webkit-transform-origin: 100% 100%; 
+background-color:#ffaa00;
+-webkit-transition: background-color 0.1s linear, width 0.1s linear;
+cursor: pointer;
+}
+#m_presenter:hover {
+background-color:#ffaaaa;
+width:230px;
+}
+
+#main {
+
+	width: 750px;
+	margin: 0 auto;
+	padding: 0;
+	text-align: left;
+	padding-bottom: 120px;
+}
+#title {
+	margin:20px;
+}
+
+
+
+
+
+/* ------------------------------------------------------------- */
+#box {
+	background-color:#ffffff;
+	filter:alpha(opacity=90);
+	opacity:0.9;
+	padding:20px;
+}
+
+
+/* -----------------------------------------------------------------------------------------------*/
+#blue {
+	color:blue;
+	text-shadow:1px 1px 3px hotpink;
+}
+
+#toha {
+	margin:20px;
+}
+
+#whitespan {
+	color:white;
+}
+
+#tyuui {
+	margin:20px;
+	font-size: small;
+}
+
+#gaiyou {
+	margin:20px;
+}
+#contents {
+	margin:20px;
+}
+#space {
+	height:50px;
+}
+#maplink {
+	margin-right:80px;
+}
+
+/*アイコンと名前のやつ--------------*/
+.icons{
+	float:left;	
+}
+
+.name1{
+	float:left;
+	margin: 4px 2px;
+}
+
+.name2{
+	line-height : 15% ;
+	float:left;
+	margin: 10px 2px;
+}
+
+#shozoku{
+	font-size:11px;
+}
+
+
+.clear{
+	clear: both;
+}
+
+.iconspace{
+	float:left;
+	width: 30px;
+}
+
+/*飛び入りの画像用*/
+.tobi{
+	float:right;
+}
+
+/*特別講演顔写真の回り込み--------------------*/
+.face{
+	float:left;
+	width: 300px;
+	padding: 50px 0px 0px 30px;
+}
+
+.abouthim{
+	float:left;
+	width: 300px;
+	margin: 4px 1px;
+	line-height : 200% ;
+}
+
+.abouthim2{
+	line-height : 200% ;
+}

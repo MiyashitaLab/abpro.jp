@@ -1,0 +1,145 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 20:02:52 12 22, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:43:20 7 10, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	border: 0;
+	text-align: center;
+	background-image: url(/web/20141222200252/http://miyashita.com/images/bg_leiste_oben.jpg);
+	background-repeat: repeat-x;
+	font: 80% Verdana, Arial, Helvetica, sans-serif; 
+	background-color: #fff;
+	color: #555555;
+	line-height:135%;
+	
+}
+
+#containar{
+	text-align: left;
+	width: 908px;	
+	margin: 0px auto;
+/*	border: solid 1px #333;*/
+}
+
+
+#frame{
+	border-top: 2px solid #fff;
+	text-align: left;
+	width: 908px;	
+	margin: 0px auto;
+/*
+	background-image: url(/web/20141222200252/http://miyashita.com/images/home_flower_bottom.jpg) ;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: left bottom
+*/
+}
+
+
+#head {
+	margin: 0px;
+	padding:  0px;
+	height: 175px;
+}
+
+/*
+.title{
+	margin-bottom:20px;
+}
+
+#wrapper {
+	padding: 0px;
+	width: 100%;
+	background: url(/web/20141222200252/http://miyashita.com/images/white.gif);
+	background-repeat: repeat-x;
+	background-position: 0 0 !important;
+	border-top: 1px solid #fff;
+	margin-top: 1px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+
+}
+*/
+
+#content {
+	margin: 0px auto 0px auto;
+	padding:  40px 0px 20px 0px;
+	text-align: left;
+	display: block !important; 
+/*	width: 787px;	*/
+	background: none;
+	border: solid 1px #009;
+	}
+
+hr {display:none}
+
+
+.clear {clear:both;}
+
+#side{
+	float:left;
+	width:160px;
+}
+
+#main_sp{
+/*	float:left;*/
+	width:640px;
+	padding-top:20px;
+	overflow:hidden;
+}
+
+#entry_title{
+	font-size:16px;
+	font-weight:bold;
+	border-left:solid 5px #666;
+	border-bottom: solid 1px #666;
+	padding-left:10px;
+	padding-bottom:3px;
+	margin-bottom:20px;
+	margin-top: 40px;
+}
+
+#archive_title{
+	font-size:16px;
+	font-weight:bold;
+	border-left:solid 5px #900;
+	padding-left:10px;
+	margin-bottom:20px;
+}
+
+#entry_body{
+	padding-left:20px;
+	margin-bottom:20px;
+
+}
+
+.list{
+	font-size:14px;
+	line-height:21px;
+}
+
+#footer{
+	clear:both;
+	background: url(/web/20141222200252/http://miyashita.com/images/bg_leiste_unten.jpg);
+	height:317px;
+	color :#999;
+	padding-top:20px;
+ 	font-size:12px;
+}
+
+img{
+	border:solid 0px;
+}

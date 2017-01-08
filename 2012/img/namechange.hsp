@@ -1,0 +1,12 @@
+#uselib "msvcrt"
+#func rename "rename" str, str
+sdim a,200
+dirlist a,"*.*"  ; カレントディレクトリの取得
+notesel a
+repeat notemax
+noteget gyou,cnt
+
+;	第1パラに元のファイルパス、第2パラに変更後のファイルパス
+	rename gyou, strtrim(gyou,0,'0')
+
+loop

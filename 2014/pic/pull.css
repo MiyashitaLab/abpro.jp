@@ -1,0 +1,68 @@
+
+
+
+
+
+/*
+     FILE ARCHIVED ON 20:26:23 12 22, 2014 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 3:42:54 7 10, 2015.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+#sidemenuWrap{
+ /*	width:908px;*/
+ 	margin-top:45px;
+	margin-left:70px;
+font-size:14px;
+text-decoration:none;
+}
+ #sidemenuWrap td.dropMenu,#sidemenuWrap td.dropMenuOn{
+ 	height:20px;
+	vertical-align:bottom;
+	position:relative;
+	width:160px;
+}
+ #sidemenuWrap td a{
+ 	display:block;
+	padding-top:2px;
+	line-height:20px;
+text-decoration:none;
+color:#eeeeee;
+}
+ #sidemenuWrap td.dropMenu table.subMenu{
+ 	display:none;
+}
+ #sidemenuWrap td.dropMenuOn table.subMenu{
+ 	display:block;
+	list-style:none;
+	position:absolute;
+	width:160px;
+/*	margin-top:-16px;	left:66px;*/
+	line-height:20px;
+	border:none;
+}
+ #sidemenuWrap td.dropMenuOn table.subMenu td{
+ 	width:160px;
+}
+ #sidemenuWrap td.dropMenu a{
+ 	padding-left:14px;
+	text-decoration:none;
+	color:#cccccc;
+}
+ #sidemenuWrap td.dropMenuOn a{
+ 	padding-left:14px;
+	color:#cccccc;
+}
+ #sidemenuWrap td.dropMenuOn table.subMenu a{
+ 	padding-left:6px;
+	background:#3d535f;
+	color:#cccccc;
+}
+ #sidemenuWrap td.dropMenuOn table.subMenu a:hover{
+ 	padding-left:6px;
+	background:#455a5d;
+	color:#ffffff;
+}
+ 

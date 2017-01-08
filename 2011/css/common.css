@@ -1,0 +1,37 @@
+/*------------commonCSS-------------*/
+*{
+	padding: 0;
+	margin: 0;
+	
+	/*border: red 1px solid;*/ /*for debug*/
+}
+
+html { overflow-y: scroll; } /* for mozilla: always display scrollbar */
+
+body {
+	color: #333;
+	font-family: Myriad, Helvetica, Arial, "Meiryo", "メイリオ", sans-serif; 
+	_font-family: 'ＭＳ Ｐゴシック', sans-serif;
+	font-size: 13px;
+	*font-size: 82%;
+	word-break: break-all; 
+	-webkit-text-size-adjust:none;
+}
+html.osMac body,
+body.osMac {
+	font-family: Myriad, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "Meiryo","メイリオ",  sans-serif;
+}
+body.en {
+	word-break: normal; 
+}
+
+img{
+	border: none;
+}
+div.divClear{
+	clear:both;
+}
+
+a:link{text-decoration:underline;color:#3366CC}
+a:visited{text-decoration:underline;color:#CC3366}
+a:hover{text-decoration:none;color:#3366FF}

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ABPro2012</title>
+<meta name="Description" content="" />
+<meta name="Keywords"  content="" />
+
+<link rel="stylesheet" type="text/css" media="screen,print" href="style.css" />
+<script type="text/javascript" src="abmat.js"></script>
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1.3.2");</script>
+<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false&language=ja" ></script>
+<script type="text/javascript" src="ikutamap.js" ></script>
+<script type="text/javascript" src="smartphone.js"></script>
+</head>
+<body>
+<div id="abbg"></div>
+<div id="stsclass">testes</div>
+<div id="wheclass">testes</div>
+<div id="testtext"></div>
+<div id="effect">
+	<button onclick="crackline()">crackline</button><br>
+	<button onclick="matrixeffect()">matrixeffect</button><br>
+	<button onclick="hamoneffect()">hamoneffect</button><br>
+	<button onclick="blockseffect()">blockseffect</button><br>
+	<button onclick="rndtexttest()">rndtexttest</button><br>
+	<button onclick="lighteffect()">lighteffect</button><br>
+</div>
+	<div id="title">
+		<h1>ABPro2012</h1>
+		<div id="aisatsu">
+		普通じゃないプログラムは、人を驚かせ、笑わせ、幸せにする。
+		</div>
+
+		<div id="cedec">
+			<div id="cedecimg">
+			<img src="img/cedec1.png">
+			</div>
+			<h3>8月20～22日に行われた<br>
+			 <a href="http://cedec.cesa.or.jp/2012/program/INT/C12_P0160.html" target="_blank">CEDEC2012<img src="img/lnk.png" alt="link"></a><br>
+			 にてABProに関する発表を行いました!!
+			</h3>
+		</div>
+		<div ="cl"></div>
+	</div>
+	<div id="main">
+		<div id="menu">
+		<ul>
+			<li>
+			<a onclick="infoclick(event)" onMouseOver="menuhover(event)" onMouseOut="menuout(event)">
+			<p class="span1" id="Info_tab">発表会情報</p></a>
+			</li>
+
+			<li>
+			<a onMouseOver="menuhover(event)" onMouseOut="menuout(event);" onclick="boclick(event)" >
+			<p class="span1" id="Presenter_tab">ABProとは</p></a>
+			</li>
+
+			<li>
+			<a onMouseOver="menuhover(event)" onMouseOut="menuout(event);" onclick="moclick(event)" >
+			<p class="span1" id="Application_tab">特別講演</p></a>
+			</li>
+
+			<li>
+			<a onMouseOver="menuhover(event)" onMouseOut="menuout(event);" onclick="proclick(event)">
+			<p class="span1" id="Program_tab">プログラム</p></a>
+			</li>
+
+			<li>
+			<a onMouseOver="menuhover(event)" onMouseOut="menuout(event);" onclick="arclick(event)">
+			<p class="span1" id="Archive_tab">アーカイブ</p></a>
+			</li>
+
+			<li>
+			<a onMouseOver="menuhover(event)" onMouseOut="menuout(event);" onclick="unclick(event)">
+			<p class="span1" id="Committee_tab">運営委員会</p></a>
+			</li>
+
+			<li>
+			<a href="http://miyashita.com" onMouseOver="menuhover(event)" onMouseOut="menuout(event);" target="_blank">
+			<p class="span1">宮下研究室<img src="img/lnk.png" alt="link"></p></a>
+			</li>
+		</ul>
+		</div>
+
+		<div id="clearfloat"></div>
+
+
+
+		<div id="Info" class="contents" onclick="infoclick(event)">
+		<h2>発表会情報</h2>
+			<div id="infomain">
+			<p>●日時：　2012/09/22 10:30 to 17:00  (10:00開場)<br>
+			<p>●会場：　明治大学　生田校舎 中央館6階メディアホール　（神奈川県川崎市多摩区東三田1-1-1 ）<br>
+			<p>●主催：　明治大学　宮下研究室　<a href="http://miyashita.com" target="_blank">http://miyashita.com<img src="img/lnk.png" alt="link"></a><br>
+			<p>●概要：　普通じゃないプログラミングを発表する場<br>
+			<div id="socialBtns">
+			<p class="btm">●Let's tweet!:</p>
+			<div class="btm">
+			<a href="http://twitter.com/share" class="twitter-share-button" data-text="#ABPro" data-count="horizontal" data-lang="ja">Tweet</a>
+			</div>
+			<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>　公式ハッシュタグ：#ABPro
+			</div><div id="clear"></div>
+			<!--<p>●告知：　<a href="">facebook</a>　＆　<a href="">ATND</a><br>-->
+			<p>●発表申込締切：　2012年9月11日23時59分59秒
+			<p>●懇親会：　17:00～　懇親会費500円，大学２年生以下無料で行います．お気軽にご参加ください．<br>
+
+				<div id="but">※見学のみの方，発表者の方どちらも参加登録をお願いいたします．<br>
+				<a href="http://atnd.org/event/abpro2012" target="_blank"><img src="img/join.png"></a><br>
+				</div>
+
+			</div>
+			<div class="mb10" id="map_canvas"></div>
+
+		</div>
+
+		<div id="Presenter" class="contents" onclick="boclick(event)">
+		<h2>ABProとは</h2>
+			<div id="bomain">
+			<p>自作の「普通じゃないプログラム作品」を発表しあう会，それがABProです．<br />
+			高度な技術や専門的な知識を用いるのも良いですが，我々が目指すのは，<br />
+			人を驚かせ，笑わせ，幸せにするようなプログラムです．<br /></p>
+			<h3>発表時の注意：</h3>
+			<p>
+			発表は<span id="hotpink">原則製作者</span>が行ってください．<br />
+			発表時間は<span id="hotpink">午前セッション３分，午後セッション５分</span>を予定しております．<br />
+			発表するものは，「プログラムなら何でも可」とします．<br />
+			ハードウェアであるかソフトウェアであるかは問いません．<br />
+			ネットワーク接続については約束できません．<br />
+			ネットワークに繋がらなくてもローカルで動くものを発表してください．<br />
+			発表に関して，当日会場で発表できない場合は，ビデオレターでの発表を許可致します．ただし，<br />「会場に作品を持ち込みできない」などの理由で作品をビデオ映像だけで発表することは認めません．<br />
+			Ustreamなどの映像配信は行いません．Twitterハッシュタグを用いたスクリーンは用意する予定です．</p>
+			</div>
+		</div>
+
+		<div id="Application" class="contents" onclick="moclick(event)">
+		<h2>特別講演：「ＨＳＰ誕生から未来構想まで」おにたま</h2>
+			<div id="bomain">
+			<div id="fl">
+			<img src="img/onitama.png">
+			</div>
+			<p>国産の手軽なプログラミング環境として、1994年から開発が開始され、<br>
+			1996年以降フリーウェアとして公開されているプログラミング言語、<br>
+			Hot Soup Processor(ＨＳＰ)の開発経緯から、現在までの道のり、<br>
+			そして今後の展望まで、作者の「おにたま」氏に紹介していただきます。<br>
+			違った切り口により、手軽さ・わかりやすさといったテーマに取り組んだ理由や、<br>
+			多くのユーザーに支持されたポイントなど、ＨＳＰに込められた思いを語っていただきます！<br>
+			</p><br>
+			<a href="http://hsp.tv/" target="_blank"><img src="img/hsp.png"></a>
+			<p>Hot Soup Processor　<a href="http://hsp.tv/" target="_blank">http://hsp.tv<img src="img/lnk.png" id="lnk" alt="link"></a></p>
+			<div id="clear"></div>
+			</div>
+		</div>
+
+		<div id="Archive" class="contents" onclick="arclick(event)">
+		<h2>アーカイブ</h2>
+			<div id="armain">
+			<h3>2010年　普通じゃないプログラミング発表会</h3>
+			<p><a href="http://miyashita.com/2010/10/20100921.html" target="_blank">http://miyashita.com/2010/10/20100921.html<img src="img/lnk.png" alt="link"></a></p>
+			<br>
+			<h3>2011年　ABPro2011</h3>
+			<p><a href="http://miyashita.com/2011/09/20110930-abpro2011.html" target="_blank">http://miyashita.com/2011/09/20110930-abpro2011.html<img src="img/lnk.png" alt="link"></a></p>
+			</div>
+		</div>
+
+		<div id="Program" class="contents" onclick="proclick(event)">
+		<h2>プログラム　 <span id="tobiiri">飛び入り参加大歓迎!!</span></h2>
+			<div id="promain">
+			<div id="timetable">
+			<table  cellspacing="10" cellpadding="10">
+<tr><td class="mes">10:00</td><td class="mes">開場 受付開始</td><td>　　</td>																																							<td class="mes">12:00</td><td class="mes">昼休憩</td><td>　　</td>																																						<td></td></tr>
+<tr><td class="mes gozen">10:30　</td><td class="mes gozen">午前セッション</td><td></td>																																			<td class="mes toku">13:00　</td><td class="toku" id="tit2">特別講演<br><span id="tit">ＨＳＰ誕生から未来構想まで</span></td><td>　</td>															<td class="mes gogob">15:20　</td><td class="mes gogob">午後セッションB</td></tr>
+<tr><td class="gozen"><img src="img/suzuki.png"></td><td class="gozen">鈴木誠也</td><td>　　</td>																																<td class="toku"><img src="img/onitama.png"></td><td class="toku"><strong>講演者：おにたま</strong><br><span id="shozoku">ONION software</span></td><td>　</td>							<td class="gogob"><img src="img/miyashita.jpg"></td><td class="gogob"><strong>宮下芳明</strong><br><span id="shozoku">明治大学准教授</span></td></tr>
+<tr><td class="gozen"><img src="img/ikawa.jpeg"></td><td class="gozen">井川洋平</td><td>　　</td>																																<td class="mes gogoa">13:30</td><td class="mes gogoa">午後セッションA</td><td>　</td>																																<td class="gogob"><img src="img/yamamoto.png"></td><td class="gogob">山本涼太</td></tr>
+<tr><td class="gozen"><img src="img/yata.png"></td><td class="gozen"><strong>矢田裕基</strong><br><span id="shozoku">チームラボ<br>未踏クリエータ</span></td><td>　　</td>								<td class="gogoa"><img src="img/nagase.jpg"></td><td class="gogoa">永瀬翔</td><td>　</td>																															<td class="gogob"><img src="img/ochiai.jpg"></td><td class="gogob"><strong>落合陽一</strong><br><span id="shozoku">東京大学暦本研究室<br>未踏スーパークリエータ</td></tr>
+<tr><td class="gozen"><img src="img/ooshima.png"></td><td class="gozen">大島裕樹</td><td>　　</td>																																<td class="gogoa"><img src="img/nakahashi.png"></td><td class="gogoa">中橋雅弘</td><td>　</td>																													<td class="gogob"><img src="img/ooe.png"></td><td class="gogob"><strong>大江龍人</strong><br><span id="shozoku">筑波大学田中研究室</td></tr>
+<tr><td class="gozen"><img src="img/yumura.jpg"></td><td class="gozen"><strong>湯村翼</strong><br><span id="shozoku">Koozyt<br>JAIST 丹研究室</td><td>　　</td>											<td class="gogoa"><img src="img/kawana.JPG"></td><td class="gogoa">川名勇気</td><td>　</td>																														<td class="gogob"><img src="img/yoshida.jpeg"></td><td class="gogob"><strong>吉田有花</strong><br><span id="shozoku">明治大学宮下研究室<br>未踏クリエータ</span></td></tr>
+<tr><td class="gozen"><img src="img/fujikake.png"></td><td class="gozen">藤掛悠</td><td>　　</td>																																<td class="gogoa"><img src="img/maeda.jpg"></td><td class="gogoa">前田晴己</td><td>　</td>																														<td class="gogob"><img src="img/un.gif"></td><td class="gogob"><strong>極秘</strong><br><span id="shozoku">ドリコム</span></td></tr>
+<tr><td class="gozen"><img src="img/nakamura.jpg"></td><td class="gozen">中村美惠子</td><td>　　</td>																															<td class="gogoa"><img src="img/oota.png"></td><td class="gogoa">	y42sora</td><td>　</td>																															<td class="gogob"><img src="img/un.gif"></td><td class="gogob"><strong>極秘</strong><br><span id="shozoku">ドリコム</span></td></tr>
+<tr><td class="gozen"><img src="img/kon.jpg"></td><td class="gozen">今佑介</td><td>　　</td>																																		<td class="gogoa"><img src="img/takahashi.jpg"></td><td class="gogoa">高橋治輝</td><td>　</td>																													<td class="gogob"><img src="img/un.gif"></td><td class="gogob">森下幸司</td></tr>
+<tr><td class="gozen"><img src="img/nuki.jpg"></td><td class="gozen">貫貴裕</td><td>　　</td>																																	<td class="gogoa"><img src="img/kurosawa.jpg"></td><td class="gogoa">黒澤祐也</td><td>　</td>																													<td class="gogob"><img src="img/ooya.gif"></td><td class="gogob">大家眸美</td></tr>
+<tr><td class="gozen"><img src="img/iida.jpg"></td><td class="gozen">飯田憲吾</td><td>　　</td>																																	<td class="gogoa"><img src="img/kato.png"></td><td class="gogoa">加藤邦拓</td>	<td>　</td>																														<td class="gogob"><img src="img/akiyama.png"></td><td class="gogob">秋山耀</td></tr>
+<tr><td class="gozen"><img src="img/mitsuhashi.png"></td><td class="gozen">三橋亜美</td><td>　　</td>																															<td class="gogoa"><img src="img/watanabe.jpg"></td><td class="gogoa"><strong>渡邊恵太</strong><br><span id="shozoku">JST ERATO</span></td><td>　</td>											<td class="gogob"><img src="img/ahara.jpg"></td><td class="gogob"><strong>阿原一志</strong><br><span id="shozoku">明治大学准教授</span></td></tr>
+<tr><td class="gozen"><img src="img/nakamuraapa.jpg"></td><td class="gozen"><strong>中村裕美</strong><br><span id="shozoku">明治大学宮下研究室<br>未踏スーパークリエータ</span></td><td></td>	<td class="gogoa"><img src="img/hashimoto.jpg"></td><td class="gogoa"><strong>橋本直</strong><br><span id="shozoku">JST ERATO</span></td><td>　</td>											<td class="gogob"><img src="img/kurihara.png"></td><td class="gogob"><strong>栗原一貴</strong><br><span id="shozoku">産総研<br>イグノーベル賞受賞</span></td></tr>
+<tr><td class="gozen"><img src="img/shimaya.png"></td><td class="gozen">ぼへー</td><td>　　</td>																																<td class="gogoa"><img src="img/nakamura.jpeg"></td><td class="gogoa"><strong>中村聡史</strong><br><span id="shozoku">京都大学大学院特定准教授</span></td><td>　</td>					<td class="gogob"><img src="img/sakakibara.png"></td><td class="gogob">榊原絵里</td></tr>
+<tr><td class="gozen"><img src="img/baba.jpg"></td><td class="gozen">馬場さおり</td><td>　　</td>																																<td class="gogoa"><img src="img/un.gif"></td><td class="gogoa">武田港</span></td><td></td>																														<td class="gogob"><img src="img/yamanaka.png"></td><td class="gogob">山中祥太</td></tr>
+<tr><td class="gozen"><img src="img/shimamoto.png"></td><td class="gozen">嶋本諒太</td><td>　　</td>																															<td class="gogoa"><img src="img/seto.png"></td><td class="gogoa"><strong>瀬戸優之</strong></td><td></td>																										<td class="mes">17:00</td><td class="mes">懇親会</td></tr>
+<tr><td>	</td><td>	</td><td>　　</td>																																																			<td class="gogoa"><img src="img/tsukuda.JPG"></td><td class="gogoa"><strong>佃洸摂</strong><br><span id="shozoku">京都大学田中研究室<br>未踏スーパークリエータ</span></td><td></td>	<td></td></td></tr>
+<tr><td>	</td><td>	</td><td>　　</td>																																																			<td class="gogoa"><img src="img/matsuno.jpg"></td><td class="gogoa">松野祐典</td><td>	</td>																																																	<td></td></td></tr>
+			</table>
+			</div>
+			</div>
+		</div>
+
+		<div id="Committee" class="contents" onclick="unclick(event)">
+		<h2>運営委員会</h2>
+			<div id="unmain">
+
+	<table  cellspacing="10" cellpadding="10">
+	<tr>
+		<td>運営委員長</td><td>M2 中橋 雅弘</td><td>　</td><td>副運営委員長</td><td>M1 永瀨 翔</td><td>　</td><td>運営委員</td><td>B4 井川 洋平</td>
+	</tr>
+	<tr>
+		<td>運営委員</td><td>D3 中村 美惠子</td><td>　</td><td>運営委員</td><td>M1 嶋屋 友佳</td><td>　</td><td>　</td><td>B4 鈴木 悠司</td>
+	</tr>
+	<tr>
+		<td>　</td><td>D2 中村 裕美</td><td>　</td><td>　</td><td>M1 前田 晴己</td><td>　</td><td>　</td><td>B4 高橋 治輝</td>
+	</tr>
+	<tr>
+		<td>　</td><td>M2 太田 佳敬</td><td>　</td><td>　</td><td>M1 松野 祐典</td><td>　</td><td>　</td><td>B4 貫 貴裕</td>
+	</tr>
+	<tr>
+		<td>　</td><td>M2 馬場 さおり</td><td>　</td><td>　</td><td>M1 山本 涼太</td><td>　</td><td>　</td><td>B4 吉田 有花</td>
+	</tr>
+	<tr>
+		<td>　</td><td>M2 松岡 拓人</td><td>　</td><td>　</td><td>B4 大島 裕樹</td><td>　</td><td>　</td><td>B3 飯田 憲吾</td>
+	</tr>
+	<tr>
+		<td>　</td><td>M2 山中 祥太</td><td>　</td><td>　</td><td>B4 大家 眸美</td><td>　</td><td>　</td><td>B3 川名 勇気</td>
+	</tr>
+	<tr>
+		<td>　</td><td>M1 榊原 絵里</td><td>　</td><td>　</td><td>B4 加藤 邦拓</td><td>　</td><td>　</td><td>B3 鈴木 誠也</td>
+	</tr>
+	<tr>
+		<td>　</td><td>M1 嶋本 諒太</td><td>　</td><td>　</td><td>B4 黒澤 祐也</td><td>　</td><td>　</td><td>B3 藤掛 悠</td>
+	</tr>
+	<tr>
+		<td>　</td><td></td><td>　</td><td>　</td><td></td><td>　</td><td>　</td><td>B3 三橋 亜美</td>
+	</tr>
+	</table>
+			</div>
+		</div>
+
+
+	</div>
+
+
+	<div id ="atogaki">
+<div id="tojiru" onclick="tojiru()">×</div>
+<h2>大盛況のうちに終了しました！！</h2>
+		<p>
+あとがき 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　 　<br>
+コンピュータがあること、コンピュータを使えることはある意味「あたりまえ」のことになりつつある。<br>
+プログラミングという行為に興味を示す人も減り、自らの手でものを作る体験を持たぬまま、<br>
+人々や企業はソーシャルなコミュニケーションなどの「流行り」を追いかけるようになった。<br>
+　でも、コーディングやハッキングの重要さ、自分が書いたプログラムが動く喜び、<br>
+人に見せられる喜びは、いつの時代も変わっていないはずである。<br>
+<br>
+　ABProでは、手段としてのプログラミングではなく、表現としてのプログラミングの面白さや素晴らしさが追求される。<br>
+そこには、自らの発想を生き生きとプレゼンするプログラマがいる。<br>
+<br>
+プログラミングから湧き上がる発想の凄さは、普通ではない。<br>
+これは、ものを作る体験があるからこそ生まれるものなのだ。<br>
+ABProで発信しているものは、まさにその発想の可能性なのである。<br>
+来年のABPro2013は、新設される明治大学中野キャンパスで開催される。あなたも参加してはいかがだろうか。<br><br>
+このパワーは参加しないとわからない。<br>
+</p>
+	</div>
+
+
+
+<script language="jscript">
+function ClassInfo()
+{
+    if (window.event.srcElement.className != null)
+    {
+        //stsclass.innerText =
+        //"クラス名："+window.event.srcElement.className+"\r\n"
+        //+"ID:"+window.event.srcElement.id;
+		nowid = window.event.srcElement.id;
+    }
+    else
+    {
+        document.getElementById("stsclass").innerText = "";
+    }
+}
+
+window.document.body.onmouseover = ClassInfo;
+</script>
+
+
+	<canvas id='world'></canvas>
+	<script type="text/javascript" src="index.js"></script>
+
+
+
+</body>
+</html>

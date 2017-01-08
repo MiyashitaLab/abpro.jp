@@ -1,0 +1,318 @@
+
+<!DOCTYPE html><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<base href="http://www34020u.sakura.ne.jp:8124/"><div style="background:#fff;border:1px solid #999;margin:-1px -1px 0;padding:0;"><div style="background:#ddd;border:1px solid #999;color:#000;font:13px arial,sans-serif;font-weight:normal;margin:12px;padding:8px;text-align:left">これは Google に保存されている <a href="http://abpro.jp/" style="text-decoration:underline;color:#00c">http://abpro.jp/</a> のキャッシュです。 このページは 2012年4月14日 03:59:45 GMT に取得されたものです。 そのため、<a href="http://abpro.jp/" style="text-decoration:underline;color:#00c">このページの最新版</a>でない場合があります。 <a href="http://www.google.com/intl/ja/help/features_list.html#cached" style="text-decoration:underline;color:#00c">詳細</a><br><br><div style="float:right"><a href="http://webcache.googleusercontent.com/search?q=cache:w4DmSjW0gkcJ:abpro.jp/&amp;hl=ja&amp;gl=jp&strip=1" style="text-decoration:underline;color:#00c">テキストのみのバージョン</a></div>
+<div>&nbsp;</div></div></div><div style="position:relative">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width,user-scalable=no" />
+	<title>ABpro top page</title>
+
+	<link rel='stylesheet' type='text/css' href='/stylesheets/jquery-ui-1.8.13.custom.css'>
+	<link rel='stylesheet' type='text/css' href='/stylesheets/jquery.upload-1.0.2.js'>
+	<link rel='stylesheet' type='text/css' href='/stylesheets/jqModal.css' />
+	<link rel='stylesheet' type='text/css' href='/stylesheets/site.css' />
+	<link rel='stylesheet' type='text/css' href='/stylesheets/canvas.css' />
+	<link rel='stylesheet' type='text/css' href='/stylesheets/character.css' />
+
+	<script type='text/javascript' src='/javascripts/jquery-1.5.1.min.js'></script>
+	<script type='text/javascript' src='/javascripts/jquery-ui-1.8.13.custom.min.js'></script>
+	<script type='text/javascript' src='/javascripts/jqModal.js'></script>
+	<script type='text/javascript' src='/javascripts/jqDnR.js'></script>
+
+	<script type='text/javascript' src='/socket.io/socket.io.js'></script>
+
+	<script type='text/javascript' src='/javascripts/characterDialog.js'></script>
+	<script type='text/javascript' src='/javascripts/informationDialog.js'></script>
+	<script type="text/javascript" src="/javascripts/sketch.js"></script>
+
+
+</head>
+<body>
+	<!-- body要素の内容をここに書いてください
+     <!DOCTYPE html>
+     <head> ... </head>
+     <html>
+     	<body>
+     		この部分だけ
+		</body>
+     </html>
+     ====================================-->
+
+<!-- お絵描きキャンバス
+     ==================== -->
+<div id='canvasBox'>
+	<!-- キャンバス -->
+	<div id='canvas-back'>
+		<canvas id='canvas'>(Your browser doesn't support canvas)</canvas>
+		<canvas id='canvas-pre'>(Your browser doesn't support canvas)</canvas>
+	</div>
+
+	<!-- ソーシャルボタン -->
+	<div class="socialArea clearfix">
+	<ul>
+	<!-- <li><a href='http://49.212.56.58:8124/login'>login</a></li> -->
+	<li><button onclick='window.open("http://49.212.56.58:8124/twitpic", "smallwin", "width=400,height=300")' id="tweetBtn">ツイッターに画像つきで投稿→</button></li>
+	<li><a href="http://twitter.com/share" class="twitter-share-button" data-text="ABPro2011は9/24開催！追加発表申し込み受付中！ #ABPro2011" data-url="http://abpro.jp" data-count="horizontal" data-lang="ja">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+	<li><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fabpro.jp&amp;send=false&amp;layout=button_count&amp;width=110&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:110px; height:21px;" allowTransparency="true"></iframe></li>
+	</ul>
+	</div>
+
+	<!-- コピーライト -->
+	<span id="copyRight">Copyright 2011 ABPro.jp | <a href="http://miyashita.com" target="_blank">Miyashita Lab.</a></span>
+
+	<!-- ツールボックス（色・太さなどの変更） -->
+	<div id="tools" align="center">
+		<a herf="" class="allopen"><img src='/images/top.png' id="footerLogo" ></a>
+		<div id="colors">
+			<div id='color-1' class="color" style="background:#FFFFFF"></div>
+			<div id='color-2' class="color" style="background:#DCDDDD"></div>
+			<div id='color-3' class="color" style="background:#9ea1a3"></div>
+			<div id='color-4' class="color" style="background:#2B2B2B"></div>
+			<div id='color-5' class="color" style="background:#D9333F"></div>
+			<div id='color-6' class="color" style="background:#762f07"></div>
+			<div id='color-7' class="color" style="background:#F5B199"></div>
+			<div id='color-8' class="color" style="background:#FFDB4F"></div>
+			<div id='color-9' class="color" style="background:#7EBEAB"></div>
+			<div id='color-10' class="color" style="background:#2F5D50"></div>
+			<div id='color-11' class="color" style="background:#89C3EB"></div>
+			<div id='color-12' class="color" style="background:#706CAA"></div>
+			<div id='color-small' class="color">小</div>
+			<div id='color-mid' class="color">中</div>
+			<div id='color-big' class="color">大</div>
+		</div>
+		<a href="" id="jqmWindow" class="jqModal"><img src="/images/btn_add_character.png"></a>
+		<a href="" id="reserve01" class="jqModalReserve01"><img src="/images/btn_reserve_01.png"></a>
+		<a href="" id="reserve02" class="jqModalReserve02"><img src="/images/btn_reserve_02.png"></a>
+	</div>
+
+	<!-- コンテンツ
+     =================================== -->
+
+	<div id="page01" class="ui-widget-content" type="text">
+	<div class="pageTitle">
+		ABPro2011は終了しました！<span id="close01" class="pageClose" alt="close"></span>
+	</div>
+
+	<div class="pageContents">
+	<div align="center">
+		<img src="images/top.png" alt="ABPro2011" id="logoImg"/><br />
+		ABPro2011は盛況のうちに終了しました！<br />
+		<a href="http://miyashita.com/2011/09/20110930-abpro2011.html" target="_blank">ABPro2011の詳細レポートはこちら→</a><br />
+		<br />
+		<br />
+		<!--<div id="addPage02">同時開催！電気味覚meets高級食材</div>-->
+
+
+
+	</div>
+		<h3>ABPro2011発表者募集：</h3><br />
+		　「普通じゃないプログラム作品」の発表を募集します．<br />
+		　高度な技術や専門的な知識を用いるのも良いですが，我々が目指すのは，人を驚かせ，笑わせ，幸せにするようなプログラムです．			<br />
+		<br />　
+		<h3>発表申し込み時の注意：</h3><br />
+		　参加単位は「個人」となっております．<br />
+		　発表は，原則作成者が行ってください．<br />
+		　発表するものは，「プログラムなら何でも可」とします．ハードウェアであるかソフトウェアであるかは問いません．<br />
+		<br />　
+		<h3>発表時の注意：</h3><br />
+		　発表時間は厳守をお願いいたします．<br />
+		　ネットワーク接続については約束できません．最悪ネットワークに繋がらなくてもローカルで動くものを発表してください．<br />
+		　発表に関して，当日会場で発表できない場合は，ビデオレターでの発表を許可致します．ただし，「会場に作品を持ち込みできない」などの理由で作品をビデオ映像だけで発表することは認めません．<br />
+		　Ustreamなどの映像配信は行いません．Twitterハッシュタグを用いた実況用のスクリーンは用意する予定です．<br />
+		<br />　
+		<h3>発表申し込み：</h3><br />
+		　発表申し込みは，以下の申し込みフォームから行ってください．<br />
+　		　発表件数は午前1セッション＋午後2セッションです．<br />
+		　　午前での発表時間は4分です．午後での発表時間は5分です．<br />
+　　		　　午後での発表は特別ゲストと混在になります．<br />
+		<br />
+		<br />
+		<h3>スケジュール：</h3><br />
+		　発表申し込み締切　<s>2011年9月10日</s><br />
+		　発表者通知　<s>2011年9月12日</s><br />
+		<br />　
+
+		<h3>Twitterハッシュタグ：</h3><br />
+		　<a href="http://twitter.com/#!/search/%23abpro2011" target="_blank">#abpro2011</a><br />
+		<br />
+		<br /> <br />
+
+		<h3>当日情報：</h3><br />
+		　時間　9月24日(土) 10:00 開場 10:30 開会<br />
+		　場所　明治大学生田校舎 中央館６階メディアホール<br />
+		<br />
+
+		<br />
+		<iframe width="330" height="220" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.co.jp/maps/ms?msa=0&amp;msid=205043152690792800610.0004ac7c83f2add7d93ef&amp;brcurrent=3,0x6018f0c06980cdd3:0xb8e6309fffc4101f,0,0x6018f0955081b0e5:0xa2edb42c14f2cd7b&amp;ie=UTF8&amp;t=m&amp;vpsrc=6&amp;ll=35.613174,139.546108&amp;spn=0.007676,0.014162&amp;z=15&amp;output=embed"></iframe><br /><small>より大きな地図で <a href="http://maps.google.co.jp/maps/ms?msa=0&amp;msid=205043152690792800610.0004ac7c83f2add7d93ef&amp;brcurrent=3,0x6018f0c06980cdd3:0xb8e6309fffc4101f,0,0x6018f0955081b0e5:0xa2edb42c14f2cd7b&amp;ie=UTF8&amp;t=m&amp;vpsrc=6&amp;ll=35.613174,139.546108&amp;spn=0.007676,0.014162&amp;z=15&amp;source=embed" style="color:#0000FF;text-align:left">明治大学生田校舎 中央館</a> を表示</small>
+
+
+	</div>
+	</div>
+
+
+
+	<div id="page02" class="ui-widget-content" type="text">
+	<div class="pageTitle">
+		同時開催！電気味覚meets高級食材<span id="close02" class="pageClose" alt="close"></span>
+	</div>
+
+	<div class="pageContents">
+		<div align="center"><a href="/images/denki_mikaku.png" target="_blank"><img src="/images/denki_mikaku.png" height="160px" /></a></div><br />
+
+		<h3><img src="/images/btn_reserve_02.png" height="20px">高級食材と電気味覚が，今，出会う・・・</h3><br />
+		<div align="center"><a href="" class="jqModalReserve02">参加申込みはこちらから→</a></div><br />
+		<br />
+		21世紀の調味料として広げている電気味覚ですが，<br />
+		これまで，いくつかの食材と電気味覚の組み合わせにチャレンジし，調味料としての可能性を探ってきました．<br />
+		そして今回，チャレンジするのが，高級食材．<br />
+		これらに電気をトッピングして，みんなで味わってみませんか？<br />
+		<br />
+		<br />
+		日時：　ABPro2011終了後　（20時頃）<br />
+		<br />
+		参加費：　5000円<br />
+		<br />
+		<a href="" class="jqModalReserve02">参加申込みはこちらから→</a>
+		<br /><br />
+	</div>
+	</div>
+
+
+
+
+	<div id="page03" class="ui-widget-content" type="text">
+	<div class="pageTitle">
+		去年の様子<span id="close03" class="pageClose" alt="close"></span>
+	</div>
+
+	<div class="pageContents">
+		<a href="http://miyashita.com/2010/10/20100921.html" target="_blank"><img src="/images/gateway.png" height="150px"></a>
+		<br /><br />
+	</div>
+	</div>
+
+
+
+	<div id="page04" class="ui-widget-content" type="text">
+	<div class="pageTitle">
+		発表者一覧<span id="close04" class="pageClose" alt="close"></span>
+	</div>
+
+	<div class="pageContents04">
+<table width="320px"><td>
+【セッション１】<br />
+<午前><br />
+井川洋平<br />
+山崎薫<br />
+大家眸美<br />
+関田心<br />
+中村美惠子<br />
+馬場さおり<br />
+榊原絵里<br />
+前田晴己<br />
+鈴木悠司<br />
+清水和晃<br />
+嶋本諒太<br />
+加藤邦拓<br />
+大島裕樹<br />
+</td><td>
+【セッション２】<br />
+<午後１><br />
+矢田裕基<br />
+松野祐典<br />
+黒澤祐也<br />
+<strong>後藤浩行</strong><br />
+<strong>橋本直</strong><br />
+<strong>栗原一貴</strong><br />
+貫貴裕<br />
+瀬戸優之<br />
+<strong>加藤公一</strong><br />
+太田佳敬<br />
+山本涼太<br />
+<strong>佃洸摂</strong><br />
+中橋雅弘<br />
+</td><td>
+【セッション３】<br />
+<午後２><br />
+宮下芳明<br />
+永瀬翔<br />
+青木秀憲<br />
+<strong>高須正和</strong><br />
+吉田有花<br />
+青木惇季<br />
+<strong>玉城絵美</strong><br />
+山中祥太<br />
+吉川祐輔<br />
+篠原祐樹<br />
+<strong>落合陽一</strong><br />
+<strong>川上あゆみ</strong><br />
+高橋治輝<br />
+ジョンベグ<br />
+松岡拓人<br />
+<strong>（小坂崇之）</strong><br />
+</td></table>
+<br />
+	</div>
+	</div>
+
+
+
+
+</div>
+
+
+<!-- 申し込みフォーム
+     =================================== -->
+
+<div class="jqmWindowReserve" id="dialogReserve01">
+	<a href="" class="jqmClose" id="iconBoxClose">Close</a>
+	<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dHNfR1dpSE51RV90TXNUb0JKc1Y2NkE6MQ" width="728" height="700" frameborder="0" marginheight="0" marginwidth="0">読み込み中...</iframe>
+</div>
+
+<div class="jqmWindowReserve" id="dialogReserve02">
+	<a href="" class="jqmClose" id="iconBoxClose">Close</a>
+	<iframe src="https://docs.google.com/spreadsheet/embeddedform?formkey=dEVmdWw4T0hIR2RIZ1ZuaFNWZTZWZ1E6MA" width="785" height="800" frameborder="0" marginheight="0" marginwidth="0">読み込み中...</iframe>
+</div>
+
+
+<!-- キャラクタ追加フォーム
+     =================================== -->
+<div class="jqmWindow" id="dialog">
+<a href="" class="jqmClose" id="iconBoxClose">Close</a>
+<h1>アイコンの追加</h1>
+
+	<!-- 画像選択欄 -->
+	<input type="radio" name="chk_info" value="1" onclick="chk_radio()" checked="checked">Twitter&nbsp;
+	<input type="radio" name="chk_info" value="2" onclick="chk_radio()">Facebook&nbsp;
+	<!--&nbsp;&nbsp;<input type="radio" name="chk_info" value="3" onclick="chk_radio()">写真アップロード<br />-->
+	<span class="fontRed">&nbsp;※</span>
+
+	<div id="picture">
+		<form name='myForm' method='post'>ID：<input type='text' name='name' size=15 maxlength=25 onKeyDown='javascript:if (event.keyCode == 13){ window.event.returnValue = false;}'>
+		<span class='fontRed'>&nbsp;※</span>
+		<input type='button' value='確認' onclick='javascript:check_submit_twitter();'> </form>
+	</div>
+
+	<!-- 性別選択欄 -->
+	<div id="selectsex">
+		<input type="radio" name="chk_info2" value="0" onclick="chk_radio2()" checked="checked">♂&nbsp;
+		<input type="radio" name="chk_info2" value="1" onclick="chk_radio2()">♀&nbsp;
+		<input type="radio" name="chk_info2" value="2" onclick="chk_radio2()">？&nbsp;
+		<span class="fontRed">&nbsp;※</span>
+	</div>
+
+	<div id="ok"></div><br />
+	<p class='fontSmall'>
+	※<span class='fontRed'>&nbsp;※</span>は必須項目です<br />
+	※&nbsp;アイコンは一定時間後に削除されます<br />
+	</p>
+
+</div>
+
+</div>
+
+
+</body>
+</html>

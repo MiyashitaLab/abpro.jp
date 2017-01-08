@@ -1,0 +1,181 @@
+/*
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 2.8.1
+*/
+
+
+body {
+	font: 14px/1.231 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro';
+	-webkit-text-size-adjust: 100%;
+	background-color: #000000;
+	color:#eeeeee;
+}
+header {
+}
+h1 {
+	font-size: 300%;
+	color: #eeeeee;
+	margin-bottom: 0px;
+	text-align: left;
+}
+#hotpink {
+	color:hotpink;
+	text-shadow:1px 1px 3px hotpink;
+}
+#aisatsu {
+	font-size:67%;
+	position:relative;
+	top:-6px;
+}
+#title {
+	margin:10px;
+}
+h2 {
+	font-size: 121%;
+	text-shadow: 1px 1px 2px #ccc;
+	color: #eeeeee;
+	margin-bottom: 10px;
+	text-align: center;
+}
+#wrap {
+	padding: 10px;
+}
+
+nav {
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	background-color: #9cc900;
+	background: -webkit-gradient(linear, left top, left bottom, from(#33aabb), to(#116699));
+	font-size: 107%;
+	width: 300px;
+	margin: 0 auto;
+}
+nav li {
+	text-align: center;
+	float: left;
+	font-weight: bold;
+	border-left: 1px solid #fff;
+	text-shadow: -1px -1px 0 rgba(150, 150, 150, 0.3);
+}
+nav li a {
+	display: block;
+	width: 99px;
+	padding: 8px 0;
+}
+nav li:first-child {
+	border: none;
+}
+nav a {
+	color: #fff;
+	text-decoration: none;
+}
+section, nav {
+	margin-bottom: 1em;
+}
+h3 {
+	background: url(../images/ico_title.png) left top no-repeat;
+	padding-left: 5px;
+	color: #eeee;
+	margin-bottom: 5px;
+	margin-top:25px;
+	min-height: 60px;
+	font-size:140%;
+}
+h4 {
+	font-size:120%;
+	padding-bottom:5px;
+}
+p {
+	margin-bottom: 0.5em;
+}
+a {
+	color:#88ff88;
+}
+aside {
+	background-color: #ebebeb;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	padding: 10px;
+}
+aside p:last-child {
+	margin-bottom: 0;
+}
+footer {
+	border-top: 1px solid #ebebeb;
+	padding-top: 10px;
+}
+#switchButton {
+	clear: both;
+	text-align: center;
+	font-size: 80%;
+}
+#btnTop {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color: #cbcccf;
+	background: -webkit-gradient(linear, left top, left bottom, from(#cbcccf), to(#acaeb0));
+	width: 7em;
+	font-size: 85%;
+	text-align: center;
+	float: right;
+	margin-right: 10px;
+}
+#btnTop a {
+	text-shadow: 1px 1px 0 #ddd;
+	display: block;
+	padding: 5px 0;
+	color: #444444;
+	text-decoration: none;
+}
+footer {
+	background: url(../images/bg_footer.png) repeat-x;
+}
+footer p {
+	clear: both;
+	padding: 0;
+}
+footer img {
+	vertical-align: top;
+}
+footer p:last-child {
+	margin: 0;
+}
+
+#balloon {
+	width: 200px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	box-shadow: 0 0 15px #666;
+	-webkit-box-shadow: 0 0 15px #666;
+	position: absolute;
+	background-color: rgba(231, 26, 91, 0.9);
+;
+	padding: 20px;
+	color: #fff;
+	line-height: 1.5;
+	text-align: center;
+}
+
+#balloon p {
+	margin: 0;
+}
+
+/* clearfix */
+.clearfix:after {
+  content: ".";  /* 新しい要素を作る */
+  display: block;  /* ブロックレベル要素に */
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+#clear {
+	clear:both;
+}
+#fl {
+	float:left;
+}
+#timetable td {
+	padding:0px 10px;
+}
