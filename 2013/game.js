@@ -3,7 +3,7 @@ enchant();
 window.onload = function(){
 	var game = new Game(700, 400);
 	game.fps = 28
-	//‘fŞ‚Ì“Ç‚İ‚İ
+	//ç´ æã®èª­ã¿è¾¼ã¿
 	game.preload('chara2.png');
 	game.preload('apple.png');
 	game.preload('toge.png');
@@ -19,7 +19,7 @@ window.onload = function(){
 	game.preload('j2.mp3');
 	game.preload('up.wav');
 
-	//‚»‚Ì‘¼ƒpƒ‰ƒ[ƒ^
+	//ãã®ä»–ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿
 	var default_x = 50;
 	var default_y = -300;
 	var ground = 350;
@@ -35,7 +35,7 @@ window.onload = function(){
 	var q = 3;
 
 	game.onload = function(){
-		//Œø‰Ê‰¹death
+		//åŠ¹æœéŸ³death
 		var sound_death = game.assets['death.wav'].clone();
 		var sound_j1 = game.assets['j1.mp3'].clone();
 		var sound_j2 = game.assets['j2.mp3'].clone();
@@ -43,19 +43,19 @@ window.onload = function(){
 
 		var scene = game.rootScene;
 
-		//ƒƒS‚ğ•\¦
+		//ãƒ­ã‚´ã‚’è¡¨ç¤º
 		var abpro_sprite = new Sprite(700, 310);
 		abpro_sprite.image = game.assets['rogo2.png'];
 		scene.addChild(abpro_sprite); 
 
-		//ƒNƒ}‚ğ”z’u
+		//ã‚¯ãƒã‚’é…ç½®
 		var kuma = new Sprite(32,32); 
 		kuma.image = game.assets['chara2.png'];
-		kuma.ys = 0;//‰Á‘¬“x
+		kuma.ys = 0;//åŠ é€Ÿåº¦
 		kuma.jump_flag = 0;
-		kuma.jump_chat_z = 0;//Z‚ÅƒWƒƒƒ“ƒv
+		kuma.jump_chat_z = 0;//Zã§ã‚¸ãƒ£ãƒ³ãƒ—
 
-		//ƒNƒ}ƒAƒjƒ[ƒVƒ‡ƒ“—p‚Ìİ’è
+		//ã‚¯ãƒã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ç”¨ã®è¨­å®š
 		kuma.frameIndex = 0;
 		var frameList = [0,1,2];
 		function kuma_anim(){
@@ -71,19 +71,19 @@ window.onload = function(){
 			}
 		}
 
-		//ƒŠƒ“ƒS‚ğ”z’u
+		//ãƒªãƒ³ã‚´ã‚’é…ç½®
 		var apple = new Sprite(22,24); 
 		apple.image = game.assets['apple.png'];
-		//ƒŠƒ“ƒS‚ÌƒAƒjƒ[ƒVƒ‡ƒ“
+		//ãƒªãƒ³ã‚´ã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³
 		function apple_anim(){
 			if(game.frame %2 == 0){
 				apple.frame = 1 - apple.frame;
 			}
 		}
-		//–Ú‚ğ”z’u
+		//ç›®ã‚’é…ç½®
 		var eye = new Sprite(73,48); 
 		eye.image = game.assets['rogoX.png'];
-		//‚Æ‚°‚ğ”z’u
+		//ã¨ã’ã‚’é…ç½®
 		var toge = new Sprite(32,32); 
 		toge.image = game.assets['toge.png'];
 
@@ -100,9 +100,9 @@ window.onload = function(){
 		var to = new Sprite(32,32); 
 		to.image = game.assets['to.png'];
 
-		//ƒL[ƒCƒxƒ“ƒgƒŠƒXƒi[
+		//ã‚­ãƒ¼ã‚¤ãƒ™ãƒ³ãƒˆãƒªã‚¹ãƒŠãƒ¼
 		document.onkeydown = function down(){
-			//ƒNƒ}‚ğã‚É“®‚©‚· Z
+			//ã‚¯ãƒã‚’ä¸Šã«å‹•ã‹ã™ Z
 			if(event.keyCode == 90 && start_flag == 1){
 				if((kuma.jump_flag < 2) && (kuma.jump_chat_z == 0)){
 					kuma.jump_flag++;
@@ -118,19 +118,19 @@ window.onload = function(){
 			}
 		}
 		document.onkeyup = function up(){
-			//Z‚ğ—£‚·‚Ì‚ğŒŸ’m
+			//Zã‚’é›¢ã™ã®ã‚’æ¤œçŸ¥
 			if(event.keyCode == 90 && start_flag == 1){
 				kuma.jump_chat_z = 0;
 			}
-			//ƒWƒƒƒ“ƒv’†ˆÈŠO‚ÅC¶‰E‚ª—£‚³‚ê‚½‚çCƒtƒŒ[ƒ€‚ğ‚O‚É–ß‚·
+			//ã‚¸ãƒ£ãƒ³ãƒ—ä¸­ä»¥å¤–ã§ï¼Œå·¦å³ãŒé›¢ã•ã‚ŒãŸã‚‰ï¼Œãƒ•ãƒ¬ãƒ¼ãƒ ã‚’ï¼ã«æˆ»ã™
 			if((event.keyCode == 37) || (event.keyCode == 39)){
 				kuma.frame = 0;
 			}
 		}
 
-		//ƒNƒŠƒbƒN‚Å‚àƒWƒƒƒ“ƒv‰Â”\
+		//ã‚¯ãƒªãƒƒã‚¯ã§ã‚‚ã‚¸ãƒ£ãƒ³ãƒ—å¯èƒ½
 		game.rootScene.addEventListener("touchstart", function(e) {
-			//ƒNƒ}‚ğã‚É“®‚©‚· Z
+			//ã‚¯ãƒã‚’ä¸Šã«å‹•ã‹ã™ Z
 			if((kuma.jump_flag < 2) && (kuma.jump_chat_z == 0)  && (start_flag == 1)){
 				kuma.jump_flag++;
 				kuma.jump_chat_z = 1;
@@ -162,7 +162,7 @@ window.onload = function(){
 					game.rootScene.addChild(to);
 					game.rootScene.addChild(kuma);
 
-					var label_goal = new Label("GOAL¨");
+					var label_goal = new Label("GOALâ†’");
 					label_goal.x = 600;
 					label_goal.y = 300;
 					scene.addChild(label_goal);
@@ -172,7 +172,7 @@ window.onload = function(){
 		});
 
 		kuma.onenterframe = function(){
-			//ƒWƒƒƒ“ƒv’†‚Ìˆ—
+			//ã‚¸ãƒ£ãƒ³ãƒ—ä¸­ã®å‡¦ç†
 			if(clear_flag == 0){
 				if(kuma.jump_flag >= 1){
 					this.y += this.ys;
@@ -182,7 +182,7 @@ window.onload = function(){
 						this.y = ground;
 					}
 				}
-				//ƒNƒ}‚ğ‰E‚É“®‚©‚·
+				//ã‚¯ãƒã‚’å³ã«å‹•ã‹ã™
 				if(game.input.right) {
 					this.scaleX = 1;
 					this.x += 5;
@@ -190,7 +190,7 @@ window.onload = function(){
 						kuma_anim();
 					}
 				}
-				//ƒNƒ}‚ğ¶‚É“®‚©‚·
+				//ã‚¯ãƒã‚’å·¦ã«å‹•ã‹ã™
 				else if(game.input.left) {
 					this.scaleX = -1;
 					this.x -= 5;
@@ -211,12 +211,12 @@ window.onload = function(){
 			}
 		}//kuma.onenterframe
 
-		//ƒŠƒ“ƒS‚ÌƒtƒŒ[ƒ€–ˆ‚Ìˆ—
+		//ãƒªãƒ³ã‚´ã®ãƒ•ãƒ¬ãƒ¼ãƒ æ¯ã®å‡¦ç†
 		apple.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.within(kuma, 16)){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 			}
 			apple_anim()
@@ -232,10 +232,10 @@ window.onload = function(){
 		}//apple.onenterframe
 
 		eye.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.intersect(kuma)){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 				
 			}
@@ -249,26 +249,26 @@ window.onload = function(){
 		}
 
 		toge.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.within(kuma, 16) && clear_flag == 0){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 			}
 		}
 		toge1.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.within(kuma, 16) && clear_flag == 0){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 			}
 		}
 		toge2.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.within(kuma, 16) && clear_flag == 0){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 			}
 			q = 0 - q;
@@ -283,23 +283,23 @@ window.onload = function(){
 
 		}
 		toge3.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.within(kuma, 16) && clear_flag == 0){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 			}
 		}
 
 		tobi.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.intersect(kuma) && clear_flag == 0){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 				clear_count = -90;
 
-				var label_fin = new Label("‚†‚‰‚D");
+				var label_fin = new Label("ï½†ï½‰ï½ï¼");
 				label_fin.x = kuma.x + 30;
 				label_fin.y = kuma.y + 10;
 				scene.addChild(label_fin);
@@ -314,26 +314,26 @@ window.onload = function(){
 		}
 
 		to.onenterframe = function(){
-			//ƒNƒ}‚Æ‚ÌÕ“Ë”»’è‚ğ‚·‚é
+			//ã‚¯ãƒã¨ã®è¡çªåˆ¤å®šã‚’ã™ã‚‹
 			if(this.intersect(kuma) && clear_flag == 0){
         			sound_death.play();
-				//ˆÊ’u‚ğ‰Šú‰»
+				//ä½ç½®ã‚’åˆæœŸåŒ–
 				clear_flag = 1;
 				clear_count = -30;
 			}
 			if( (kuma.x > 130) && (to_flag == 0) ){
 				to_flag = 1;
 				sound_up.play();
-				//DOM‚ğg‚Á‚Ä‚İ‚é
+				//DOMã‚’ä½¿ã£ã¦ã¿ã‚‹
 				var sampleNode=document.getElementById("target");
-				sampleNode.innerHTML="@ABPro¡‚ÍI";
+				sampleNode.innerHTML="ã€€ABProâ– ã¯ï¼";
 			}
 			if(to_flag == 1){
 				to.y -= 20;
 			}
 		}
 
-		//ƒIƒuƒWƒFƒNƒg‚Ì‰Šú‰»i€‚ñ‚¾‚ç‚±‚±j
+		//ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã®åˆæœŸåŒ–ï¼ˆæ­»ã‚“ã ã‚‰ã“ã“ï¼‰
 		function clear(){
 			kuma.x = 50;
 			kuma.y = 350;
@@ -365,10 +365,10 @@ window.onload = function(){
 			tobi_flag = 0;
 			clear_flag = 0;
 			var sampleNode=document.getElementById("target");
-			sampleNode.innerHTML="@ABPro‚Æ‚ÍI";
+			sampleNode.innerHTML="ã€€ABProã¨ã¯ï¼";
 		}
 
-		//ƒQ[ƒ€ƒtƒŒ[ƒ€–ˆ‚Ìˆ—
+		//ã‚²ãƒ¼ãƒ ãƒ•ãƒ¬ãƒ¼ãƒ æ¯ã®å‡¦ç†
 		game.onenterframe = function(){
 		}//game.onenterframe
 

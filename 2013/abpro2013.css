@@ -1,5 +1,5 @@
 body {
-	font-family: "ƒƒCƒŠƒI", Meiryo, "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "Hiragino Kaku Gothic Pro";
+	font-family: "ãƒ¡ã‚¤ãƒªã‚ª", Meiryo, "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", Osaka, "ãƒ’ãƒ©ã‚®ãƒè§’ã‚´ Pro W3", "Hiragino Kaku Gothic Pro";
 	background-color:#F8EFFF;
 	background-attachment: fixed;
 }
@@ -23,7 +23,7 @@ h3 {
 	height:350px;
 	margin-right : 0 ;
 }
-/* Šeíƒƒjƒ…[ƒo[ */
+/* å„ç¨®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ãƒãƒ¼ */
 #m_top {
 position:absolute;
 top:20;
@@ -145,7 +145,7 @@ width:230px;
 	margin-right:80px;
 }
 
-/*ƒAƒCƒRƒ“‚Æ–¼‘O‚Ì‚â‚Â--------------*/
+/*ã‚¢ã‚¤ã‚³ãƒ³ã¨åå‰ã®ã‚„ã¤--------------*/
 .icons{
 	float:left;	
 }
@@ -175,12 +175,12 @@ width:230px;
 	width: 30px;
 }
 
-/*”ò‚Ñ“ü‚è‚Ì‰æ‘œ—p*/
+/*é£›ã³å…¥ã‚Šã®ç”»åƒç”¨*/
 .tobi{
 	float:right;
 }
 
-/*“Á•Êu‰‰ŠçÊ^‚Ì‰ñ‚è‚İ--------------------*/
+/*ç‰¹åˆ¥è¬›æ¼”é¡”å†™çœŸã®å›ã‚Šè¾¼ã¿--------------------*/
 .face{
 	float:left;
 	width: 300px;
