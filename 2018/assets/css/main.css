@@ -1,0 +1,222 @@
+body {
+  background-color: #f2f2f2;
+  font-family: "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3",
+  "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  color: #555;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;  
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Impact", "Osaka", "ヒラギノ角ゴ ProN W6", "HiraKakuProN-W6",
+    "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: 300;
+  color: #333;
+}
+
+p {
+  line-height: 28px;
+  margin-bottom: 25px;  
+}
+
+a {
+  line-height: 28px;
+  margin-bottom: 25px;  
+}
+
+.scroll-icon{
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  border:#fff 2px solid;
+  position:absolute;
+  bottom:3%;
+  right:3%;  
+}
+
+.scroll-icon span{
+  position: absolute;
+  top: 12px;
+  left:27px;  
+  width: 15px;
+  height: 15px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+
+.togetterwrapp {
+  margin-top: 40px;
+  background-color: #1b95e0;
+  width: 230px;
+  border-radius: 4px; 
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px;
+  display: inline-block;
+  font-family:Helvetica, Verdana, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;  
+}
+
+.togetterwrapp:hover{
+  background-color:#0b85d0;
+}
+
+.togetter {
+  margin-top: 20px;
+  color: #f2f2f2;
+  font-weight:bold;
+  text-decoration: none;
+}
+
+.togetter:link {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.togetter:hover {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.togetter:visited {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.togetter:active {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+.dailyportalzwrapp{  
+  background-color: #f5f7fa;  
+  width: 270px;
+  height:40px;
+  line-height: 250%;
+  border-radius: 4px; 
+  -webkit-border-radius: 4px; 
+  -moz-border-radius: 4px;
+  display: inline-block;
+  font-weight:bold;
+  font-family:Helvetica, Verdana, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;  
+}
+
+.dailyportalzwrapp:hover{
+  background-color:#c5c7ca;
+}
+
+.dailyportalz{
+  color:#69707a;
+}
+
+.dailyportalz:link{
+  color:#69707a;
+  text-decoration: none;
+}
+
+.dailyportalz:active{
+  color:#69707a;
+  text-decoration: none;
+}
+
+.dailyportalz:hover{
+  color:#69707a;
+  text-decoration: none;
+}
+
+.dailyportalz:visited{
+  color:#69707a;
+  text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.headerwrap {
+  background: url(../img/header-bg.jpg) no-repeat center top;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 700px;
+  width: 100%;
+
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.headerwrap h1 {
+  margin-top: 150px;
+  color: white;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.headerwrap .links a {
+  color: #f2f2f2;
+}
+
+.f {
+  background: #1a1a1a;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+}
+
+.f h3 {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.f a {
+  font-size: 20px;
+  color: #f2f2f2;
+  padding:0 10px;
+}
+
+.f p {
+  font-size: 20px;
+  color: #f2f2f2;
+  padding:0 10px;
+}
+
+.linkwrap {
+  border-radius: 100%;
+  border: solid 1px #fff;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  padding: 9px 0;
+  position: relative;
+}
+.linkwrap a {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.linkwrap:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
