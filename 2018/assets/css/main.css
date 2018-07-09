@@ -34,11 +34,9 @@ a {
 .scroll-icon{
   width:50px;
   height:50px;
-  border-radius: 50%;
-  border:#fff 2px solid;
-  position:absolute;
-  bottom:3%;
-  right:3%;  
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .scroll-icon span{
@@ -176,9 +174,8 @@ a {
 
 .f {
   background: #1a1a1a;
-  padding-top: 70px;
-  padding-bottom: 70px;
   text-align: center;
+  padding: 70px 10px;
 }
 
 .f h3 {
@@ -190,14 +187,13 @@ a {
 
 .f a {
   font-size: 20px;
-  color: #f2f2f2;
-  padding:0 10px;
+  color: #f2f2f2;  
+  text-decoration: underline;
 }
 
 .f p {
   font-size: 20px;
-  color: #f2f2f2;
-  padding:0 10px;
+  color: #f2f2f2;  
 }
 
 .linkwrap {
@@ -213,8 +209,7 @@ a {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 100%;
-  text-decoration: none;
+  height: 100%;  
 }
 
 .linkwrap:hover {
