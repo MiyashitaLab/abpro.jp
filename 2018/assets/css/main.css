@@ -3,8 +3,7 @@ body {
   font-family: "ヒラギノ角ゴ ProN W3", "HiraKakuProN-W3",
   "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
   font-weight: 300;
-  font-size: 16px;
-  color: #555;
+  font-size: 16px;  
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;  
 }
@@ -17,8 +16,7 @@ h5,
 h6 {
   font-family: "Impact", "Osaka", "ヒラギノ角ゴ ProN W6", "HiraKakuProN-W6",
     "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-  font-weight: 300;
-  color: #333;
+  font-weight: 300;  
 }
 
 p {
@@ -28,7 +26,8 @@ p {
 
 a {
   line-height: 28px;
-  margin-bottom: 25px;  
+  margin-bottom: 25px;      
+  text-decoration: underline;  
 }
 
 .scroll-icon{
@@ -53,88 +52,67 @@ a {
   box-sizing: border-box;
 }
 
-.togetterwrapp {
-  margin-top: 40px;
-  background-color: #1b95e0;
-  width: 230px;
-  border-radius: 4px; 
-  -webkit-border-radius: 4px; 
-  -moz-border-radius: 4px;
-  display: inline-block;
-  font-family:Helvetica, Verdana, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;  
-}
-
-.togetterwrapp:hover{
-  background-color:#0b85d0;
-}
-
-.togetter {
-  margin-top: 20px;
-  color: #f2f2f2;
-  font-weight:bold;
-  text-decoration: none;
-}
-
-.togetter:link {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-.togetter:hover {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-.togetter:visited {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-.togetter:active {
-  color: #f2f2f2;
-  text-decoration: none;
-}
-
-.dailyportalzwrapp{  
+label {
   background-color: #f5f7fa;  
-  width: 270px;
-  height:40px;
-  line-height: 250%;
+  height:28px;
+  line-height:28px;
+  width:93px;
+  color:#69707a;  
+  display: inline-block;
   border-radius: 4px; 
   -webkit-border-radius: 4px; 
   -moz-border-radius: 4px;
-  display: inline-block;
-  font-weight:bold;
-  font-family:Helvetica, Verdana, Arial, "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, sans-serif;  
+  margin: 20px;  
 }
 
-.dailyportalzwrapp:hover{
-  background-color:#c5c7ca;
+label:hover{
+  background-color: #c5c7ca;    
 }
 
-.dailyportalz{
-  color:#69707a;
+input[type="checkbox"].on-off{
+  display: none;
 }
 
-.dailyportalz:link{
-  color:#69707a;
-  text-decoration: none;
+.relatedarticle ul {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
-.dailyportalz:active{
-  color:#69707a;
-  text-decoration: none;
+.relatedarticle{
+  overflow: auto;
 }
 
-.dailyportalz:hover{
-  color:#69707a;
-  text-decoration: none;
+.relatedarticle li {
+  padding: 5px;     
 }
 
-.dailyportalz:visited{
-  color:#69707a;
-  text-decoration: none;
+.relatedarticle li p{
+  padding: 5px;     
+  margin:0;
+  font-size:20px;
+  color:white;
 }
+
+.relatedarticle li a{  
+  color: #f2f2f2;    
+  text-decoration: underline;
+}
+
+input[type="checkbox"].on-off + ul{
+  height: 0;
+  overflow: hidden;
+}
+
+input[type="checkbox"].on-off:checked + ul{
+  height: 200px;
+}
+
 
 .centered {
   text-align: center;
@@ -169,7 +147,7 @@ a {
 }
 
 .headerwrap .links a {
-  color: #f2f2f2;
+  color:#5bd5f9;
 }
 
 .f {
@@ -189,6 +167,7 @@ a {
   font-size: 20px;
   color: #f2f2f2;  
   text-decoration: underline;
+  color: #5bd5f9;
 }
 
 .f p {
@@ -210,6 +189,7 @@ a {
   left: 0;
   width: 100%;
   height: 100%;  
+  color:#5bd5f9;
 }
 
 .linkwrap:hover {
