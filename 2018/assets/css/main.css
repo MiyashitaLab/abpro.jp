@@ -286,7 +286,3 @@ input[type='checkbox'].on-off:checked + ul {
   display: block;
   content: '.';
 }
-
-.timetable .contaier {
-  width: 90%;
-}
