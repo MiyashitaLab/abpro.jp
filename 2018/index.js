@@ -100,6 +100,12 @@ window.addEventListener('load', function() {
       affiliation: '宮下研究室',
     },
     {
+      url: 'https://twitter.com/tnayuki',
+      thumbnail: './assets/img/450376157_243_400x400.jpg',
+      name: 'tnayuki',
+      affiliation: '',
+    },
+    {
       url: 'https://twitter.com/ukeyshima',
       thumbnail: './assets/img/5cGmSyiB_400x400.jpg',
       name: '島田雄輝',
