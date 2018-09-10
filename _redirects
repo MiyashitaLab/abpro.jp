@@ -1,1 +1,5 @@
+# Redirect default Netlify subdomain to primary domain
+http://abpro.netlify.com/* https://abpro.jp/:splat 301!
+https://abpro.netlify.com/* https://abpro.jp/:splat 301!
+
 /   /2018   302
